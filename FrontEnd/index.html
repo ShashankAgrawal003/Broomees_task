@@ -1,13 +1,105 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Shashank Broomees Task
-        </title>
-    </head>
-    <body>
-        <h1>
-            Hello Shashank Agrawal
-        </h1>
-    </body>
+  <head>
+    <title>Shashank Broomees Task</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="carousel.js"></script>
+  </head>
+  <body>
+    <div class="box_border">
+      <div class="Square_box_container">
+        <!-- <i class="fa-light fa-circle-xmark"></i> -->
+        <div class="image_part">
+          <div class="mySlides fade" id="image_part1">
+            <img src="../images/pic2.png" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              reiciendis, perspiciatis totam hic adipisci libero dolores
+              praesentium! Corporis, eius similique!
+            </p>
+          </div>
+          <div class="mySlides fade" id="image_part2">
+            <img src="../images/pic1.png" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis vel rem fugiat, quia quis recusandae sapiente accusamus
+              dolores? Dicta, voluptas!
+            </p>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div
+            style="text-align: center; background-color: #eaeaea; width: 90%"
+          >
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
+        <div class="form_part">
+          <h1>Register your product</h1>
+          <div class="form_outer_box">
+            <form>
+              <div class="form_box">
+                <div class="form_left_part">
+                  <div class="box1">
+                    <label for="Category">Category</label>
+                    <br />
+                    <select>
+                      <option selected>Select Category</option>
+                      <option>Category 1</option>
+                      <option>Category 2</option>
+                      <option>Category 3</option>
+                    </select>
+                  </div>
+                  <div class="box2">
+                    <label for="Serial"
+                      >Serial Number <span style="color: red">*</span></label
+                    >
+                    <br />
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="form_right_part">
+                  <div class="box1">
+                    <label for="Model">Model</label>
+                    <br />
+                    <select>
+                      <option selected>Select Model</option>
+                      <option>Model 1</option>
+                      <option>Model 2</option>
+                      <option>Model 3</option>
+                    </select>
+                  </div>
+                  <div class="box2">
+                    <label for="Date">Date of Invoice</label>
+
+                    <br />
+                    <input
+                      type="text"
+                      id="calender"
+                      placeholder="Select Date"
+                      onfocus="(this.type='date')"
+                      onblur="(this.type='text')"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="upload_part">
+                <label for="upload">Upload File</label>
+                <br />
+                <input
+                  type="file"
+                  placeholder="Drag files here or browser"
+                  data-multiple-caption="{count} files selected"
+                  multiple
+                />
+                <!-- <label for="file"><strong>Choose a file</strong><span> or drag it here</span>.</label> -->
+              </div>
+              <button type="submit" href="_blank">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
