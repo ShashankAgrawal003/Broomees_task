@@ -42,17 +42,13 @@ function submitFunction(){
   var date = document.getElementById("date");
   var dateValue=date.value;
   console.log(dateValue);
-  // .valueOf()
+  
 
   var file=document.getElementById("file");
   var fileValue=file.value;
   console.log(fileValue);
 
-  // document.getElementById("output1").textContent()=categoryValue;
-  // document.getElementById("output2").textContent()=serialValue;
-  // document.getElementById("output3").textContent()=modelValue;
-  // document.getElementById("output4").textContent()=dateValue;
-  // document.getElementById("output5").textContent()=fileValue;
+
 
 
 

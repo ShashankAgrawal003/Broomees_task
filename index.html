@@ -30,8 +30,7 @@
           </div>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          <div
-            style="text-align: center;">
+          <div style="text-align: center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
           </div>
@@ -57,7 +56,7 @@
                       >Serial Number <span style="color: red">*</span></label
                     >
                     <br />
-                    <input id="serialNumber" type="text" required/>
+                    <input id="serialNumber" type="text" required />
                   </div>
                 </div>
                 <div class="form_right_part">
@@ -89,26 +88,26 @@
                 <label for="upload">Upload File</label>
                 <br />
                 <input
-                  type="file" id="file"
+                  type="file"
+                  id="file"
                   placeholder="Drag files here or browser"
                   data-multiple-caption="{count} files selected"
                   multiple
                 />
                 <!-- <label for="file"><strong>Choose a file</strong><span> or drag it here</span>.</label> -->
               </div>
-              <button type="submit" href="server.html"onclick="submitFunction()">Submit</button>
+              <button
+                type="submit"
+                href="server.html"
+                onclick="submitFunction()"
+              >
+                Submit
+              </button>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <div>
-      <p id="output1"></p>
-      <p id="output2"></p>
-      <p id="output3"></p>
-      <p id="output4"></p>
-      <p id="output5"></p>
-
-    </div>
+    <div></div>
   </body>
 </html>
