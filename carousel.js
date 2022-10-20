@@ -5,7 +5,7 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+// current slide pe dot color nhi ho rha
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -24,4 +24,14 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+// .........................................................................................
+function submitFunction(){
+  // var category = document.getElementById("category");
+  // var categoryValue= category.options[category.selectedIndex].text;
+
+  var selectCategory = document.querySelector('#category');
+        output = selectCategory.value;
+  console.log(selectCategory);
+
 }

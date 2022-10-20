@@ -31,7 +31,7 @@
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
           <div
-            style="text-align: center; background-color: #eaeaea; width: 90%">
+            style="text-align: center;">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
           </div>
@@ -45,7 +45,7 @@
                   <div class="box1">
                     <label for="Category">Category</label>
                     <br />
-                    <select>
+                    <select id="category">
                       <option selected>Select Category</option>
                       <option>Category 1</option>
                       <option>Category 2</option>
@@ -96,7 +96,7 @@
                 />
                 <!-- <label for="file"><strong>Choose a file</strong><span> or drag it here</span>.</label> -->
               </div>
-              <button type="submit" href="_blank">Submit</button>
+              <button type="submit" onclick="submitFunction()">Submit</button>
             </form>
           </div>
         </div>
