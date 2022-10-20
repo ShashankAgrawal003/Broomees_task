@@ -22,16 +22,40 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  // slides[slideIndex-1].style.display = "block";
+  // dots[slideIndex-1].className += " active";
 }
 // .........................................................................................
 function submitFunction(){
-  // var category = document.getElementById("category");
-  // var categoryValue= category.options[category.selectedIndex].text;
+  var category = document.getElementById("category");
+  var categoryValue= category.options[category.selectedIndex].text;
+  console.log(categoryValue);
 
-  var selectCategory = document.querySelector('#category');
-        output = selectCategory.value;
-  console.log(selectCategory);
+  var model = document.getElementById("model");
+  var modelValue= model.options[model.selectedIndex].text;
+  console.log(modelValue);
+
+  var serialNumber = document.getElementById("serialNumber");
+  var serialValue=serialNumber.value;
+  console.log(serialValue);
+
+  var date = document.getElementById("date");
+  var dateValue=date.value;
+  console.log(dateValue);
+  // .valueOf()
+
+  var file=document.getElementById("file");
+  var fileValue=file.value;
+  console.log(fileValue);
+
+  // document.getElementById("output1").textContent()=categoryValue;
+  // document.getElementById("output2").textContent()=serialValue;
+  // document.getElementById("output3").textContent()=modelValue;
+  // document.getElementById("output4").textContent()=dateValue;
+  // document.getElementById("output5").textContent()=fileValue;
+
+
+
+
 
 }

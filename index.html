@@ -57,14 +57,14 @@
                       >Serial Number <span style="color: red">*</span></label
                     >
                     <br />
-                    <input type="text" />
+                    <input id="serialNumber" type="text" required/>
                   </div>
                 </div>
                 <div class="form_right_part">
                   <div class="box1">
                     <label for="Model">Model</label>
                     <br />
-                    <select>
+                    <select id="model">
                       <option selected>Select Model</option>
                       <option>Model 1</option>
                       <option>Model 2</option>
@@ -77,7 +77,7 @@
                     <br />
                     <input
                       type="text"
-                      id="calender"
+                      id="date"
                       placeholder="Select Date"
                       onfocus="(this.type='date')"
                       onblur="(this.type='text')"
@@ -89,18 +89,26 @@
                 <label for="upload">Upload File</label>
                 <br />
                 <input
-                  type="file"
+                  type="file" id="file"
                   placeholder="Drag files here or browser"
                   data-multiple-caption="{count} files selected"
                   multiple
                 />
                 <!-- <label for="file"><strong>Choose a file</strong><span> or drag it here</span>.</label> -->
               </div>
-              <button type="submit" onclick="submitFunction()">Submit</button>
+              <button type="submit" href="server.html"onclick="submitFunction()">Submit</button>
             </form>
           </div>
         </div>
       </div>
+    </div>
+    <div>
+      <p id="output1"></p>
+      <p id="output2"></p>
+      <p id="output3"></p>
+      <p id="output4"></p>
+      <p id="output5"></p>
+
     </div>
   </body>
 </html>
