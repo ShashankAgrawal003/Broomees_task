@@ -5,7 +5,7 @@ var mongoose=require("mongoose");
 
 const app=express();
 app.use(bodyParser.json());
-app.use(express.static('/'));
+// app.use(express.static('/'));
 app.use(bodyParser.urlencoded({
     extended:true
 }));
@@ -39,8 +39,8 @@ app.post("/submit",(req,res)=>{
         "date" : date,
         "file":file
     }
-
-    db.collection('values').insertOne(data,(err,collection)=>{
+// yaha _ lagaya hai extra
+    db.collection('values').insertOne(data,(err,_collection)=>{
         if(err){
             throw err;
         }
@@ -55,6 +55,5 @@ app.get('/',(req,res)=>{
     res.set({"Allow-access-Allow-Origin":'*'});
     // ye return line kyu hai
     return res.redirect('index.html');
-});
-app.listen(3000);
+}).listen(3000);
 console.log("Listening to the port 3000");
