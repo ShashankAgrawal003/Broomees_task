@@ -25,33 +25,4 @@ function showSlides(n) {
   // slides[slideIndex-1].style.display = "block";
   // dots[slideIndex-1].className += " active";
 }
-// .........................................................................................
-function submitFunction(){
-  var category = document.getElementById("category");
-  var categoryValue= category.options[category.selectedIndex].text;
-  console.log(categoryValue);
 
-  var model = document.getElementById("model");
-  var modelValue= model.options[model.selectedIndex].text;
-  console.log(modelValue);
-
-  var serialNumber = document.getElementById("serialNumber");
-  var serialValue=serialNumber.value;
-  console.log(serialValue);
-
-  var date = document.getElementById("date");
-  var dateValue=date.value;
-  console.log(dateValue);
-  
-
-  var file=document.getElementById("file");
-  var fileValue=file.value;
-  console.log(fileValue);
-
-
-
-
-
-
-
-}

@@ -38,13 +38,13 @@
         <div class="form_part">
           <h1>Register your product</h1>
           <div class="form_outer_box">
-            <form>
+            <form action="submit" method="post">
               <div class="form_box">
-                <div class="form_left_part">
+                <div class="form_left_part">  
                   <div class="box1">
                     <label for="Category">Category</label>
                     <br />
-                    <select id="category">
+                    <select id="category" name="category">
                       <option selected>Select Category</option>
                       <option>Category 1</option>
                       <option>Category 2</option>
@@ -56,14 +56,14 @@
                       >Serial Number <span style="color: red">*</span></label
                     >
                     <br />
-                    <input id="serialNumber" type="text" required />
+                    <input id="serialNumber" type="text" name="serialNumber" required />
                   </div>
                 </div>
                 <div class="form_right_part">
                   <div class="box1">
                     <label for="Model">Model</label>
                     <br />
-                    <select id="model">
+                    <select id="model" name="model">
                       <option selected>Select Model</option>
                       <option>Model 1</option>
                       <option>Model 2</option>
@@ -77,6 +77,7 @@
                     <input
                       type="text"
                       id="date"
+                      name="date"
                       placeholder="Select Date"
                       onfocus="(this.type='date')"
                       onblur="(this.type='text')"
@@ -90,19 +91,14 @@
                 <input
                   type="file"
                   id="file"
+                  name="file"
                   placeholder="Drag files here or browser"
                   data-multiple-caption="{count} files selected"
                   multiple
                 />
                 <!-- <label for="file"><strong>Choose a file</strong><span> or drag it here</span>.</label> -->
               </div>
-              <button
-                type="submit"
-                href="server.html"
-                onclick="submitFunction()"
-              >
-                Submit
-              </button>
+              <button type="submit">Submit</button>
             </form>
           </div>
         </div>

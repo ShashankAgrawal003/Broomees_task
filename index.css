@@ -5,9 +5,9 @@
   /* background-color: rgb(185, 183, 189); */
 }
 .box_border {
-    border-color: blue;
-    border-width: 10px;
-    box-shadow: 0 10 60 0 rgba(207, 29, 29, 0.5);
+  border-color: blue;
+  border-width: 10px;
+  box-shadow: 0 10 60 0 rgba(207, 29, 29, 0.5);
 }
 .Square_box_container {
   margin: 20px;
@@ -77,7 +77,7 @@ img {
 .active,
 .dot:hover {
   /* background-color: #717171; */
-  background-color:black;
+  background-color: black;
 }
 .fade {
   animation-name: fade;
@@ -97,7 +97,7 @@ img {
   width: 60%;
   display: right;
   padding: 40px;
-  padding-left:60px;
+  padding-left: 60px;
   margin: 40px;
   /* background-color: aqua; */
 }
@@ -135,11 +135,12 @@ select {
   margin-top: 10px;
   padding: 15px;
   width: 200%;
-  color: darkgray;
+  color: black;
   border-width: 3px;
   /* border-color: lightgrey; */
 }
-input[type="text"], input[type="date"] {
+input[type="text"],
+input[type="date"] {
   margin-top: 10px;
   padding: 15px;
   width: 200%;
