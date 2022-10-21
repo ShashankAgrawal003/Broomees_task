@@ -19,10 +19,10 @@ db.on('error',()=>console.log("Error in Connecting to Database"));
 db.once('open',()=>console.log("Connected to Database"));
 
 app.post("/submit",(req,res)=>{
-    var category = req.body.name;
-    var model = req.body.email;
-    var serialNumber = req.body.phno;
-    var date = req.body.password;
+    var category = req.body.category;
+    var model = req.body.model;
+    var serialNumber = req.body.serialNumber;
+    var date = req.body.date;
     var file=req.body.file;
 
     console.log(category);
