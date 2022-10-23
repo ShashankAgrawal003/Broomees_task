@@ -24,7 +24,6 @@ db.once("open", () => console.log("Connected to Database"));
 app.get("/", (req, res) => {
   res.set({ "Allow-access-Allow-Origin": "*" });
   return res.sendFile(path.join(__dirname + "/public/index.html"));
-
 });
 
 app.post("/submit", async (req, res) => {
@@ -34,12 +33,6 @@ app.post("/submit", async (req, res) => {
     var serialNumber = req.body.serialNumber;
     var date = req.body.date;
     var file = req.body.file;
-
-    console.log(category);
-    console.log(model);
-    console.log(serialNumber);
-    console.log(date);
-    console.log(file);
 
     var data = {
       category: category,
@@ -56,9 +49,9 @@ app.post("/submit", async (req, res) => {
       console.log("Record Inserted Successfully");
     });
 
-    return res.redirect("result.html");
+    return res.json({ msg: "success" });
   } catch (error) {
-    res.status(400).send(error);
+    return res.json({ msg: "error" });
   }
 });
 

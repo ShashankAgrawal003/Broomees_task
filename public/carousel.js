@@ -26,3 +26,44 @@ function showSlides(n) {
   // dots[slideIndex-1].className += " active";
 }
 
+function onSubmit(){
+  event.preventDefault();
+  var category = document.getElementById("category");
+  var categoryValue= category.options[category.selectedIndex].text;
+
+  var model = document.getElementById("model");
+  var modelValue= model.options[model.selectedIndex].text;
+
+  var serialNumber = document.getElementById("serialNumber");
+  var serialValue=serialNumber.value;
+
+  var date = document.getElementById("date");
+  var dateValue=date.value;
+
+  var file=document.getElementById("file");
+  var fileValue=file.value;
+
+  const data={
+    "category":categoryValue,
+    "model":modelValue,
+    "serialNumber":serialValue,
+    "date":dateValue,
+    "file":fileValue
+  };
+// 
+  $.ajax({ 
+    url: "/submit",
+    type: "POST",
+    data: data,
+    dataType: 'json',
+    success: function() {
+      alert("Data inserted successfully!!!");
+    
+    },
+    error: function () {
+      alert("Error Occurred!!!");
+  }
+});
+}
+
+

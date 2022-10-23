@@ -3,7 +3,9 @@
   <head>
     <title>Shashank Broomees Task</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <script type="text/javascript" src="carousel.js"></script>
+    <script type="text/javascript" src="carousel.js">
+      
+    </script>
   </head>
   <body>
     <div class="box_border">
@@ -38,8 +40,9 @@
         <div class="form_part">
           <h1>Register your product</h1>
           <div class="form_outer_box">
-            <!-- <form action="http://localhost:3000/submit" method="post"> -->
-              <form action="/submit" method="post">
+            
+              <!-- <form action="/submit" method="post"> -->
+              <form>
               <div class="form_box">
                 <div class="form_left_part">  
                   <div class="box1">
@@ -99,7 +102,7 @@
                 />
                 <!-- <label for="file"><strong>Choose a file</strong><span> or drag it here</span>.</label> -->
               </div>
-              <button type="submit">Submit</button>
+              <button type="submit" onClick="onSubmit()">Submit</button>
             </form>
           </div>
         </div>
@@ -107,4 +110,5 @@
     </div>
     <div></div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </html>
