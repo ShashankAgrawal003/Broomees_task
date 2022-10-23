@@ -9,25 +9,22 @@
   <body>
     <div class="box_border">
       <div class="Square_box_container">
-        <!-- <i class="fa-light fa-circle-xmark"></i> -->
         <div class="image_part">
           <div class="mySlides fade" id="image_part1">
-            <!-- <img src="../images/pic2.png" /> -->
             <img src="pic2.png" />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nam veniam non in earum amet.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
+              nam veniam non in earum amet.
             </p>
           </div>
           <div class="mySlides fade" id="image_part2">
-            <!-- <img src="../images/pic1.png" /> -->
             <img src="pic1.png" />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, similique soluta recusandae impedit cum cupiditate.
-
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab,
+              similique soluta recusandae impedit cum cupiditate.
             </p>
           </div>
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
           <div style="text-align: center">
             <span class="dot active" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -36,11 +33,9 @@
         <div class="form_part">
           <h1>Register your product</h1>
           <div class="form_outer_box">
-            
-              <!-- <form action="/submit" method="post"> -->
-              <form>
+            <form>
               <div class="form_box">
-                <div class="form_left_part">  
+                <div class="form_left_part">
                   <div class="box1">
                     <label for="Category">Category</label>
                     <br />
@@ -56,7 +51,12 @@
                       >Serial Number <span style="color: red">*</span></label
                     >
                     <br />
-                    <input id="serialNumber" type="text" name="serialNumber" required />
+                    <input
+                      id="serialNumber"
+                      type="text"
+                      name="serialNumber"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="form_right_part">
@@ -86,7 +86,7 @@
                 </div>
               </div>
               <div class="upload_part">
-                <label for="upload">Upload File</label>
+                <label id="upload_file" for="upload">Upload File</label>
                 <br />
                 <input
                   type="file"
@@ -95,10 +95,18 @@
                   placeholder="Drag files here or browser"
                   data-multiple-caption="{count} files selected"
                   multiple
+                  hidden
                 />
-                <!-- <label for="file"><strong>Choose a file</strong><span> or drag it here</span>.</label> -->
+                <br />
+                <label class="file_button_Css" for="file"
+                  >Drag file here or <span>browse</span></label
+                >
               </div>
-              <button type="submit" onClick="onSubmit()">Submit</button>
+              <br>
+              <div id="button_css">
+                <button type="submit" onClick="onSubmit()">Submit</button>
+              </div>
+              
             </form>
           </div>
         </div>
@@ -106,5 +114,4 @@
     </div>
     <div></div>
   </body>
-  
 </html>
