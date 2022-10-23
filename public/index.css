@@ -18,9 +18,10 @@
 }
 img {
   width: 90%;
-  height: 100%;
-  object-fit: cover;
+  height: 100vh;
+  
   overflow: hidden;
+  
 }
 .image_part {
   display: left;
@@ -146,6 +147,7 @@ input[type="date"] {
   width: 200%;
   color: black;
   border-width: 3px;
+  outline: none;
  
 }
 #calender {
