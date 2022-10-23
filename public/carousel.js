@@ -5,7 +5,6 @@ function plusSlides(n) {
   showSlides((slideIndex += n));
 }
 
-// current slide pe dot color nhi ho rha
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
@@ -26,11 +25,9 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-  
-  
+
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
 
 function onSubmit() {
@@ -65,10 +62,8 @@ function onSubmit() {
   };
 
   if (serialValue === "") {
-    serialNumber.style.borderColor="red";
-    
-  } 
-  else {
+    serialNumber.style.borderColor = "red";
+  } else {
     $.ajax({
       url: "/submit",
       type: "POST",

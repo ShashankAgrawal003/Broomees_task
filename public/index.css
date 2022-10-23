@@ -128,28 +128,22 @@ input[type="date"] {
 }
 .upload_part {
   margin-top: 10px;
-  
 }
 
-
 .file_button_Css {
-  
   border-style: dashed;
   border-color: lightgray;
   cursor: pointer;
-  width:47%;
-  height:100px;
-  position:absolute;
-  padding:50px 0px;
+  width: 47%;
+  height: 100px;
+  position: absolute;
+  padding: 50px 0px;
   text-align: center;
-  
-
-
-} 
-#button_css{
-  margin-top:80px;
 }
-span{
+#button_css {
+  margin-top: 80px;
+}
+span {
   color: red;
 }
 
