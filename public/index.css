@@ -177,7 +177,7 @@ input[type="date"]:hover {
   transform: scale(1.1);
   transition: 1s;
 }
-input[type="file"]:hover {
+.file_button_Css:hover {
   transform: scale(1.1);
   transition: 1s;
 }
